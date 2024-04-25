@@ -9,7 +9,7 @@ const hero = () => {
           className="h-fit opacity-70 object-cover"
           src={Hero}
           alt=""
-          srcset=""
+          srcSet=""
         />
       </div>
     </div>
