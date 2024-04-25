@@ -14,7 +14,7 @@ const Nav = () => {
 
           <li className="text-white">
             <a className="text-white text-lg " href="">
-              Announcement
+              Post
             </a>
           </li>
 

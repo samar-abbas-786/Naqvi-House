@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "../App.css";
 
 const post = () => {
@@ -9,7 +10,9 @@ const post = () => {
           Lets Create a Post
         </h1>
         <form
-          action=""
+          action="http://localhost:3000/api/post/post"
+          method="post"
+          encType="multipart/form-data"
           className=" inside-input h-[50vh] w-[90vw] bg-white rounded-lg flex flex-col justify-around items-center "
         >
           <input name="image" type="file" placeholder="Post Your Image" />
@@ -23,6 +26,8 @@ const post = () => {
             type="text"
             placeholder="Enter the Description of Post"
           />
+
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>
