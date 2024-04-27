@@ -6,7 +6,7 @@ const hero = () => {
     <div>
       <div className="upper bg-black">
         <img
-          className="h-fit opacity-70 object-cover"
+          className="h-[90vh] opacity-70  w-full object-cover"
           src={Hero}
           alt=""
           srcSet=""
