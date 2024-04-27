@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link, to } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Nav = () => {
   return (
@@ -7,26 +7,31 @@ const Nav = () => {
       <div className="navigation">
         <ul className="h-[60px] w-[100vw] bg-black flex items-center justify-evenly">
           <li className="text-white">
-            <a className="text-white text-lg " href="">
+            <Link className="text-white text-lg" to="/">
+              Home
+            </Link>
+          </li>
+          <li className="text-white">
+            <Link className="text-white text-lg" to="/Gallery">
               Gallery
-            </a>
+            </Link>
           </li>
 
           <li className="text-white">
-            <a className="text-white text-lg " href="">
+            <Link className="text-white text-lg" to="/Post">
               Post
-            </a>
+            </Link>
           </li>
 
           <li className="text-blue">
-            <a className="text-blue-400 text-lg " href="">
-              login
-            </a>
+            <Link className="text-blue-400 text-lg" to="/">
+              Login
+            </Link>
           </li>
           <li className="text-black px-3 py-1 rounded-md bg-blue-800 hover:bg-blue-700">
-            <a className="text-white text-lg " href="">
+            <Link className="text-white text-lg" to="/">
               Sign up
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

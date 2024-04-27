@@ -1,10 +1,13 @@
 import React from "react";
-import axios from "axios";
 import "../App.css";
+import Nav from "./nav";
+import Header from "./header";
 
 const post = () => {
   return (
     <div>
+      <Header></Header>
+      <Nav></Nav>
       <div className="box h-[80vh] w-screen bg-blue-200 flex flex-col  justify-center items-center">
         <h1 className="mb-[4rem] text-4xl text-[#262626] font-semibold ">
           Lets Create a Post
@@ -27,7 +30,12 @@ const post = () => {
             placeholder="Enter the Description of Post"
           />
 
-          <button type="submit">Submit</button>
+          <button
+            className="h-max w-max px-5 py-1 rounded-md text-2xl text-white bg-[#262626]"
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>

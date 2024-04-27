@@ -27,19 +27,19 @@ function SeePost() {
       {data.map((post, i) => (
         <div
           key={i}
-          className="card p-1 flex flex-col justify-center items-center h-[300px] bg-gray-100 rounded-md mt-9 w-[90vw]"
+          className="card p-3 flex flex-col justify-center items-center h-max bg-gray-100 rounded-md mt-9 w-[90vw]"
         >
           <img
-            className="w-[80%] h-[220px] object-contain  rounded-md"
+            className="w-[80%] h-max object-cover  rounded-md"
             src={`/src/uploaded-image/${post.image}`}
             alt={post.title}
             srcSet=""
           />
-          <h1 className="text-xl font-mono">
+          <h1 className="text-3xl font-mono">
             <b>Title:</b>
             {post.title}
           </h1>
-          <h3 className="text-lg font-mono">
+          <h3 className="text-2xl font-mono mt-2">
             <b>Description:</b>
             {post.description}
           </h3>
