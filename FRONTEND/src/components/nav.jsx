@@ -28,7 +28,7 @@ const Nav = () => {
               Login
             </Link>
           </li>
-          <li className="text-black px-3 py-1 rounded-md bg-blue-800 hover:bg-blue-700">
+          <li className="text-black px-3 py-[5px] rounded-md bg-blue-800 hover:bg-blue-700">
             <Link className="text-white text-lg" to="/">
               Sign up
             </Link>

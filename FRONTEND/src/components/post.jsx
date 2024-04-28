@@ -4,6 +4,10 @@ import Nav from "./nav";
 import Header from "./header";
 
 const post = () => {
+  function onSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <div>
       <Header></Header>
@@ -31,6 +35,7 @@ const post = () => {
           />
 
           <button
+            onClick={(e) => onSubmit}
             className="h-max w-max px-5 py-1 rounded-md text-2xl text-white bg-[#262626]"
             type="submit"
           >
